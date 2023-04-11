@@ -42,6 +42,7 @@ def run_discord_bot():
     async def on_raw_reaction_add(payload):
         emoji_id = payload.emoji.name
         print(emoji_id)
+        # this event detects all reactions, seems to be an issue with the default set of emojis, seems custom emojis have more options
 
     @client.event
     async def on_raw_reaction_remove(payload):
